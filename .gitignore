@@ -1,0 +1,9 @@
+# Whitelist mode (ignore everything)
+*
+# Whitelist self
+!.gitignore
+# Look into directories
+!*/
+# HxH1
+!cards-hxh1/*.toml
+!cards-hxh1/**/*.lua

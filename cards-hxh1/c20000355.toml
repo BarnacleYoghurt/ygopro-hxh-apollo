@@ -1,0 +1,11 @@
+[card.killua]
+id=20000355
+name="Hunter X Transmuter - Killua"
+set="hunterx"
+type="monster effect"
+race="thunder"
+attribute="dark"
+effect='''When your opponent activates a monster effect (Quick Effect): You can Special Summon this card from your hand. You can only use this effect of "Hunter X Transmuter - Killua" once per turn. If this card battles an opponent's monster, that monster has its effects negated until the end of the Damage Step. Before damage calculation, if this card attacked an opponent's monster while you control another "Hunter X" monster: You can destroy that opponent's monster.'''
+atk=1500
+def=0
+level=3
