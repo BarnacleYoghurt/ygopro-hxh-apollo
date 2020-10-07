@@ -1,5 +1,6 @@
 [card.leorio]
 id=20000357
+ot="custom"
 name="Hunter X Emitter - Leorio"
 set="hunterx"
 type="monster effect"
@@ -9,3 +10,6 @@ effect='''At the start of the Damage Step, if your "Hunter X" monster battles an
 atk=1000
 def=2000
 level=4
+strings=[
+	"Special Summon this card"
+]

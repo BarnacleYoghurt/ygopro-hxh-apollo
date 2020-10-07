@@ -1,5 +1,6 @@
 [card.gon]
 id=20000354
+ot="custom"
 name="Hunter X Enhancer - Gon"
 set="hunterx"
 type="monster effect"
@@ -9,3 +10,6 @@ effect='''When your opponent Normal or Special Summons a monster(s) (except duri
 atk=500
 def=0
 level=3
+strings=[
+	"Special Summon this card"
+]

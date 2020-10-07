@@ -1,5 +1,6 @@
 [card.kurapika]
 id=20000356
+ot="custom"
 name="Hunter X Conjurator - Kurapika"
 set="hunterx"
 type="monster effect"
@@ -9,3 +10,7 @@ effect='''If a monster(s) is sent to your opponent's GY. (Quick Effect): You can
 atk=1800
 def=1000
 level=4
+strings=[
+	"Special Summon this card",
+	"Reduce ATK"
+]
