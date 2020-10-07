@@ -5,4 +5,4 @@
 
 [expansion.cards-hxh1]
 default = true
-recipe = ["sets.toml", "c20000355.toml"]
+recipe = ["sets.toml", "c20000354.toml", "c20000355.toml", "c20000356.toml", "c20000357.toml"]

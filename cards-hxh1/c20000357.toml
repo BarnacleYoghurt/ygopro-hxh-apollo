@@ -1,0 +1,11 @@
+[card.leorio]
+id=20000357
+name="Hunter X Emitter - Leorio"
+set="hunterx"
+type="monster effect"
+race="spellcaster"
+attribute="water"
+effect='''At the start of the Damage Step, if your "Hunter X" monster battles an opponent's monster: You can Special Summon this card from your hand, and if you do, your monster cannot be destroyed by that battle. You can only use this effect of "Hunter X Emitter - Leorio" once per turn. Your opponent cannot target face-up "Hunter X" monsters on the field with card effects, except this one, also they cannot be destroyed by your opponent's card effects.'''
+atk=1000
+def=2000
+level=4

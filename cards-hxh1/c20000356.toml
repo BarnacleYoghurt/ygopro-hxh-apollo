@@ -1,0 +1,11 @@
+[card.kurapika]
+id=20000356
+name="Hunter X Conjurator - Kurapika"
+set="hunterx"
+type="monster effect"
+race="spellcaster"
+attribute="light"
+effect='''If a monster(s) is sent to your opponent's GY. (Quick Effect): You can Special Summon this card from your hand. You can only use this effect of "Hunter X Conjurator - Kurapika" once per turn. Once per turn (Quick Effect): You can target 1 face-up monster on the field; it loses 500 ATK'''
+atk=1800
+def=1000
+level=4

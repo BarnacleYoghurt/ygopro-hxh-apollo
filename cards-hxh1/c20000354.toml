@@ -1,0 +1,11 @@
+[card.gon]
+id=20000354
+name="Hunter X Enhancer - Gon"
+set="hunterx"
+type="monster effect"
+race="warrior"
+attribute="earth"
+effect='''When your opponent Normal or Special Summons a monster(s) (except during the Damage Step): You can Special Summon this card from your hand. You can only use this effect of "Hunter X Enhancer - Gon" once per turn. Gains 500 ATK and DEF for each "Hunter X" monster you control.'''
+atk=500
+def=0
+level=3
