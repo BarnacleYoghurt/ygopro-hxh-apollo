@@ -1,0 +1,6 @@
+[card.departure]
+id=20000377
+ot="custom"
+name="Departure"
+type="spell normal"
+effect='''Add 1 "Hunter X" monster from your Deck to your hand. You can only activate 1 "Departure" per turn'''

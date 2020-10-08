@@ -1,0 +1,6 @@
+[card.emperorChains]
+id=20000360
+ot="custom"
+name="Emperor Chains"
+type="trap continuous"
+effect='''Activate this card by targeting 1 "Hunter X Conjurator - Kurapika"; neither player can Special Summon monsters with ATK less than or equal to the original ATK of that monster. When that monster leaves the field, destroy this card.'''

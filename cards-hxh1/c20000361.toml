@@ -1,0 +1,9 @@
+[card.jajanken]
+id=20000361
+ot="custom"
+name="Jajanken"
+type="spell quick-play"
+effect='''Target 1 "Hunter X" you control; if it battles an opponent's monster this turn while you control it, apply 1 of these effects, also, if you control 1 "Hunter X Enchancer - Gon" at this card's activation, you can apply all of these effects instead. You can only activate 1 "Jajanken" per turn.
+● If it attacks a Defense Position monster, inflict piercing battle damage to your opponent.
+● Double any battle damage your opponent takes.
+● Destroy the opponent's monster that battled it at the end of the Damage Step.'''

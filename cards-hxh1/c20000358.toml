@@ -1,0 +1,6 @@
+[card.nenTraining]
+id=20000358
+ot="custom"
+name="Nen Training"
+type="spell continuous"
+effect='''If a "Hunter X" monster(s) you control is destroyed by battle or an opponent's card effect: You can target 1 of those monsters; Special Summon 1 "Hunter X" monster from your Deck. whose Level is lower than target's original Level. You can only use this effect of "Nen Training" once per turn.'''
