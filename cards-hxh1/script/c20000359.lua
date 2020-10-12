@@ -16,6 +16,7 @@ end
 function s.target1(e,tp,eg,ep,ev,re,r,rp,chk,chkc)
   if chkc then return chkc:IsCanBeEffectTarget(e) and chkc:IsLocation(LOCATION_MZONE) and chkc:IsControler(tp) and s.filter1(chkc) end
   if chk==0 then return Duel.IsExistingTarget(s.filter1,tp,LOCATION_MZONE,0,1,nil) end
+  Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_TARGET)
   local g=Duel.SelectTarget(tp,s.filter1,tp,LOCATION_MZONE,0,1,1,nil)
 end
 function s.operation1(e,tp,eg,ep,ev,re,r,rp)
