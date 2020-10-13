@@ -1,0 +1,17 @@
+[card.morel]
+id=20000370
+ot="custom"
+name="Hunter X Manipulator - Morel"
+set="hunterx"
+type="monster effect"
+race="spellcaster"
+attribute="water"
+effect='''If a face-up "Hunter X" monster(s) you control, except "Hunter X Manipulator - Morel", is destroyed by battle or card effect (except during the Damage Step): You can Special Summon this card from your hand. During your opponent's turn (Quick Effect): You can Special Summon 1 "Deep Purple Token" (Fairy-Type/WATER/Level 1/ATK 1000/DEF 500). While you control a "Deep Purple Token", you take no damage. if this card would be destroyed, you can destroy 1 "Deep Purple Token" instead. You can only use each effect of "Hunter X Manipulator - Morel" once per turn.'''
+atk=2700
+def=2000
+level=8
+strings=[
+	"Special Summon this card",
+	"Special Summon Token",
+	"Destroy Token instead?"
+]

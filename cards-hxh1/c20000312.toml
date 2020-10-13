@@ -1,0 +1,16 @@
+[card.shoot]
+id=20000312
+ot="custom"
+name="Hunter X Manipulator - Shoot"
+set="hunterx"
+type="monster effect"
+race="spellcaster"
+attribute="wind"
+effect='''When you take damage: You can Special Summon this card from your hand. You can only use this effect of "Hunter X Manipulator - Shoot" once per turn. When this card destroys an opponent's monster by battle: You can equip that monster to this card. Negate the activated effects of monsters with the same Type of the monster's equipped by this effect.'''
+atk=2100
+def=200
+level=6
+strings=[
+	"Special Summon this card",
+	"Equip destroyed monster"
+]

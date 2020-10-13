@@ -1,0 +1,16 @@
+[card.biscuit]
+id=20000315
+ot="custom"
+name="Hunter X Enhancer - Biscuit"
+set="hunterx"
+type="monster effect"
+race="warrior"
+attribute="earth"
+effect='''When your opponent Special Summon a monster(s) from the Extra Deck (except during the Damage Step): You can Special Summon this card from your hand. You can only use this effect of "Hunter X Enhancer - Biscuit" once per turn. When this card declares an attack, you can change the battle position of all monsters your opponent controls. (Flip Effects are not activated at this time.)'''
+atk=2000
+def=1000
+level=5
+strings=[
+	"Special Summon this card",
+	"Change battle positions of opponent's monsters"
+]

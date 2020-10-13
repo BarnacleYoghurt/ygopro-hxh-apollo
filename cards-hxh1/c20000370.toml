@@ -1,0 +1,16 @@
+[card.knov]
+id=20000372
+ot="custom"
+name="Hunter X Conjurator - Knov"
+set="hunterx"
+type="monster effect"
+race="warrior"
+attribute="earth"
+effect='''When a card(s) is added from the Main Deck to your opponent's hand (except during the Draw Phase or the Damage Step): You can Special Summon this card from your hand. You can only use this effect of "Hunter X Conjurator - Knov" once per turn. Once per turn (Quick Effect): You can target 1 "Hunter X" monster you control; banish it (until the Standby Phase of your next turn), and if you do, draw 1 card.'''
+atk=2300
+def=0
+level=7
+strings=[
+	"Special Summon this card",
+	"Banish monster and draw"
+]

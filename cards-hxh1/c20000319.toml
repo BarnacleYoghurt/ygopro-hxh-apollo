@@ -1,0 +1,16 @@
+[card.knuckle]
+id=20000319
+ot="custom"
+name="Hunter X Emitter - Knuckle"
+set="hunterx"
+type="monster effect"
+race="warrior"
+attribute="earth"
+effect='''If you have no other cards in your hand: You can Special Summon this card from your hand You can only use this effect of "Hunter X Emitter - Knuckle" once per turn. Once per turn (Quick Effect): You can target 1 face-up monster your opponent controls; place 1 Hakoware Counter on it. Negate the effects of your opponent's monster that have Hakoware Counters.'''
+atk=2500
+def=2000
+level=7
+strings=[
+	"Special Summon this card",
+	"Place Hakoware counter"
+]
