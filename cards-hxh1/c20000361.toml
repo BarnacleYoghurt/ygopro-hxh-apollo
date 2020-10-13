@@ -7,3 +7,9 @@ effect='''Target 1 "Hunter X" you control; if it battles an opponent's monster t
 ● If it attacks a Defense Position monster, inflict piercing battle damage to your opponent.
 ● Double any battle damage your opponent takes.
 ● Destroy the opponent's monster that battled it at the end of the Damage Step.'''
+strings=[
+	"Inflict piercing damage",
+	"Double battle damage",
+	"Destroy opponent's monster",
+	"All of the above"
+]
