@@ -1,0 +1,11 @@
+[card.token_morel]
+id=20010370	
+ot="custom"
+name="Deep Purple Token"
+type="monster token normal"
+race="fairy"
+attribute="water"
+effect='''Summoned by the effect of "Hunter X Manipulator - Morel".'''
+atk=1000
+def=500
+level=1
