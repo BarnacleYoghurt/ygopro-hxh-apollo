@@ -12,5 +12,6 @@ def=0
 level=7
 strings=[
 	"Special Summon this card",
-	"Banish monster and draw"
+	"Banish monster and draw",
+	'''Return the "Hunter X" monster banished by "Hunter X Conjurator - Knov"'''
 ]
