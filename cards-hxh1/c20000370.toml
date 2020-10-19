@@ -12,6 +12,5 @@ def=2000
 level=8
 strings=[
 	"Special Summon this card",
-	"Special Summon Token",
-	"Destroy Token instead?"
+	"Special Summon Token"
 ]
