@@ -20,14 +20,14 @@ function s.initial_effect(c)
   c:RegisterEffect(e1)
 end
 function s.filter1a(c,e,tp,rp)
-  return c:IsPreviousSetCard(0x200) and c:IsType(TYPE_MONSTER)
+  return c:IsPreviousSetCard(0xf01) and c:IsType(TYPE_MONSTER)
     and (c:IsReason(REASON_BATTLE) or (rp==1-tp and c:IsReason(REASON_EFFECT)))
     and c:IsPreviousLocation(LOCATION_MZONE) and c:GetPreviousControler()==tp
     and c:IsLocation(LOCATION_GRAVE+LOCATION_REMOVED) and c:IsCanBeEffectTarget(e)
     and c:GetOriginalLevel()>0 and Duel.IsExistingMatchingCard(s.filter1b,tp,LOCATION_DECK,0,1,nil,e,tp,c:GetOriginalLevel())
 end
 function s.filter1b(c,e,tp,lvl)
-  return c:IsSetCard(0x200) and c:GetLevel()<lvl and c:IsCanBeSpecialSummoned(e,0,tp,false,false)
+  return c:IsSetCard(0xf01) and c:GetLevel()<lvl and c:IsCanBeSpecialSummoned(e,0,tp,false,false)
 end
 function s.target1(e,tp,eg,ep,ev,re,r,rp,chk,chkc)
   local pg=eg:Filter(s.filter1a,nil,e,tp,rp)

@@ -52,7 +52,7 @@ function s.target2(e,c)
   return c==e:GetHandler():GetBattleTarget()
 end
 function s.filter3(c)
-  return c:IsFaceup() and c:IsSetCard(0x200)
+  return c:IsFaceup() and c:IsSetCard(0xf01)
 end
 function s.condition3(e,tp,eg,ep,ev,re,r,rp)
   return Duel.IsExistingMatchingCard(s.filter3,tp,LOCATION_MZONE,0,1,e:GetHandler())

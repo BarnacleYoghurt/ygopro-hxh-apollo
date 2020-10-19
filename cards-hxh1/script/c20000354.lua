@@ -47,7 +47,7 @@ function s.operation1(e,tp,eg,ep,ev,re,r,rp)
   end
 end
 function s.filter2(c)
-  return c:IsFaceup() and c:IsSetCard(0x200)
+  return c:IsFaceup() and c:IsSetCard(0xf01)
 end
 function s.value2(e,c)
   return Duel.GetMatchingGroupCount(s.filter2,c:GetControler(),LOCATION_MZONE,0,nil)*500

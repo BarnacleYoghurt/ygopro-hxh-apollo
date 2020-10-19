@@ -16,7 +16,7 @@ function s.condition1(e,tp,eg,ep,ev,re,r,rp)
 	return Duel.GetCurrentPhase()<PHASE_MAIN2
 end
 function s.filter1a(c)
-  return c:IsFaceup() and c:IsSetCard(0x200)
+  return c:IsFaceup() and c:IsSetCard(0xf01)
 end
 function s.filter1b(c)
   return c:IsFaceup() and c:IsCode(20000354)

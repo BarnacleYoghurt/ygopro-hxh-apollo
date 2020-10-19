@@ -39,7 +39,7 @@ function s.condition1(e,tp,eg,ep,ev,re,r,rp)
 	if not d then return false end
 	if d:IsControler(tp) then a,d=d,a end
   e:SetLabelObject(a)
-	return a:IsSetCard(0x200) and a:IsFaceup()
+	return a:IsSetCard(0xf01) and a:IsFaceup()
 end
 function s.target1(e,tp,eg,ep,ev,re,r,rp,chk)
   if chk==0 then 
@@ -62,5 +62,5 @@ function s.operation1(e,tp,eg,ep,ev,re,r,rp)
   end
 end
 function s.target2(e,c)
-  return c:IsFaceup() and c:IsSetCard(0x200) and c~=e:GetHandler()
+  return c:IsFaceup() and c:IsSetCard(0xf01) and c~=e:GetHandler()
 end
