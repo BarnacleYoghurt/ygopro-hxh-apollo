@@ -9,6 +9,7 @@ recipe = [
   "sets.toml",
   "c20000312.toml",
   "c20000315.toml",
+  "c20000318.toml",
   "c20000319.toml",
   "c20000354.toml",
   "c20000355.toml",
@@ -18,8 +19,10 @@ recipe = [
   "c20000359.toml",
   "c20000360.toml",
   "c20000361.toml",
+  "c20000363.toml",
   "c20000370.toml",
   "c20000372.toml",
+  "c20000376.toml",
   "c20000377.toml",
   "c20010370.toml"
 ]

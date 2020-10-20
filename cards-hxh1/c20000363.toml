@@ -1,0 +1,9 @@
+[card.bomberAmbush]
+id=20000363
+ot="custom"
+name="Bomber Ambush"
+type="trap"
+effect='''When an opponent's monster declares an attack while you control a "Hunter X" monster: Target the attacking monster; destroy all face-up monsters on their side of the field with ATK lower than the targeted monster's ATK. If this Set card in its owner's control is destroyed by an opponent's card effect; destroy the monster with the highest ATK on their side of the field.'''
+strings=[
+  "Destroy opponent's monster with highest ATK"
+]

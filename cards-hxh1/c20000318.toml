@@ -1,0 +1,6 @@
+[card.hyperEnhance]
+id=20000318
+ot="custom"
+name="Hyper Enhance"
+type="spell quick-play"
+effect='''Target 1 "Hunter X" monster you control; until the end of this turn, its ATK and DEF become double its current ATK and DEF, also any battle damage it inflicts to your opponent is halved.'''
