@@ -61,6 +61,8 @@ end
 function s.operation2(e,tp,eg,ep,ev,re,r,rp)
 	local tc=Duel.GetFirstTarget()
 	if tc:IsRelateToEffect(e) and Duel.Remove(tc,0,REASON_EFFECT+REASON_TEMPORARY)>0 and tc:IsLocation(LOCATION_REMOVED) then
+    local ct=(Duel.GetTurnPlayer()==tp and Duel.GetCurrentPhase()<=PHASE_STANDBY) and 2 or 1
+		local val=(Duel.GetTurnPlayer()==tp and Duel.GetCurrentPhase()<=PHASE_STANDBY) and Duel.GetTurnCount() or (Duel.GetTurnCount()-1)
 		local e1=Effect.CreateEffect(e:GetHandler())
 		e1:SetDescription(aux.Stringid(id,2))
 		e1:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
@@ -69,24 +71,19 @@ function s.operation2(e,tp,eg,ep,ev,re,r,rp)
 		e1:SetCountLimit(1)
 		e1:SetCondition(s.condition2_1)
 		e1:SetOperation(s.operation2_1)
-		if Duel.GetTurnPlayer()==tp and Duel.GetCurrentPhase()<=PHASE_STANDBY then
-			e1:SetValue(Duel.GetTurnCount())
-			e1:SetReset(RESET_PHASE+PHASE_STANDBY+RESET_SELF_TURN,2)
-			tc:RegisterFlagEffect(id,RESET_PHASE+PHASE_STANDBY+RESET_SELF_TURN,0,2)
-		else
-			e1:SetValue(0)
-			e1:SetReset(RESET_PHASE+PHASE_STANDBY+RESET_SELF_TURN)
-			tc:RegisterFlagEffect(id,RESET_PHASE+PHASE_STANDBY+RESET_SELF_TURN,0,1)
-		end
+		e1:SetLabel(val)
+		e1:SetReset(RESET_PHASE+PHASE_STANDBY+RESET_SELF_TURN,ct)
 		Duel.RegisterEffect(e1,tp)
+		tc:CreateEffectRelation(e1)
 		
     local p,d=Duel.GetChainInfo(0,CHAININFO_TARGET_PLAYER,CHAININFO_TARGET_PARAM)
     Duel.Draw(p,d,REASON_EFFECT)
 	end
 end
 function s.condition2_1(e,tp,eg,ep,ev,re,r,rp)
-	if Duel.GetTurnPlayer()~=tp or Duel.GetTurnCount()==e:GetValue() then return false end
-	return e:GetLabelObject():GetFlagEffect(id)~=0
+	if Duel.GetTurnPlayer()~=tp or Duel.GetTurnCount()==e:GetLabel() then return false end
+	local tc=e:GetLabelObject()
+	return tc:IsRelateToEffect(e)
 end
 function s.operation2_1(e,tp,eg,ep,ev,re,r,rp)
 	local tc=e:GetLabelObject()
