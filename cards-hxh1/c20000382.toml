@@ -1,0 +1,10 @@
+[card.justAwake]
+id=20000382
+ot="custom"
+name="Just Awake"
+type="spell field"
+effect='''While this card is face-up on the field, you can activate this effect instead of conducting a normal draw during your Draw Phase. Add 1 "Hunter X" monster from your Deck to your hand. If a "Hunter X" is Special Summoned by its own effect: You can target 1 Spell/Trap on the field; destroy that target. You can only use this effect of "Just Awake" once per turn.'''
+strings=[
+  '''Add "Hunter X" monster from Deck''',
+  "Destroy Spell/Trap"
+]

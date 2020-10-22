@@ -1,0 +1,16 @@
+[card.alluka]
+id=20000156
+ot="custom"
+name="Hunter X Specialist - Alluka"
+set="hunterx"
+type="monster effect tuner"
+race="fiend"
+attribute="dark"
+effect='''If you control no monsters, you can Special Summon this card (from your hand). You can Tribute this card; add 1 "Hunter X" monster from your Deck to your hand. You can banish this card from your GY; Target 1 "Hunter X" monster in your GY; Special Summon that target in Defense Position, but its effects are negated, its DEF becomes 0, also its battle position cannot be changed. You can only use 1 "Hunter X Specialist - Alluka" effect per turn, and only once that turn.'''
+atk=0
+def=0
+level=2
+strings=[
+	'''Tribute this card to add "Hunter X" monster''',
+	'''Banish this card to Special Summon "Hunter X" monster from GY'''
+]
