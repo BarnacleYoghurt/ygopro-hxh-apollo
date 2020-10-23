@@ -7,6 +7,7 @@
 default = true
 recipe = [
   "sets.toml",
+  "c20000156.toml",
   "c20000312.toml",
   "c20000315.toml",
   "c20000318.toml",
@@ -24,5 +25,7 @@ recipe = [
   "c20000372.toml",
   "c20000376.toml",
   "c20000377.toml",
+  "c20000382.toml",
+  "c20000387.toml",
   "c20010370.toml"
 ]
