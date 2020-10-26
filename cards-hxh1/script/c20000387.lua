@@ -20,7 +20,7 @@ function s.condition1(e,tp,eg,ep,ev,re,r,rp)
   return Duel.IsExistingMatchingCard(s.filter1,tp,LOCATION_GRAVE,0,1,nil)
 end
 function s.target1(e,tp,eg,ep,ev,re,r,rp,chk)
-	if chk==0 then return Duel.GetFieldGroupCount(tp,LOCATION_HAND,0) or Duel.IsPlayerCanDraw(tp,6-Duel.GetFieldGroupCount(tp,LOCATION_HAND,0)) end
+	if chk==0 then return true end
 	Duel.SetOperationInfo(0,CATEGORY_DICE,nil,0,tp,1)
 end
 function s.operation1(e,tp,eg,ep,ev,re,r,rp)
@@ -28,7 +28,7 @@ function s.operation1(e,tp,eg,ep,ev,re,r,rp)
   local gc=Duel.GetFieldGroupCount(tp,LOCATION_HAND,0)
   if dc>gc then
     Duel.Draw(tp,dc-gc,REASON_EFFECT)
-  else
+  elseif gc>dc then
     Duel.DiscardHand(tp,aux.TRUE,gc-dc,gc-dc,REASON_EFFECT,nil)
   end
 end
