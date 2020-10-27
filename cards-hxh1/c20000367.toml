@@ -1,0 +1,6 @@
+[card.ragingContract]
+id=20000367
+ot="custom"
+name="Raging Contract"
+type="spell quick-play"
+effect='''Target 1 "Hunter X" monster you control; send it to the GY, also, after that, if it left the field by this effect, Special Summon 1 "Hunter X" monster from your Extra Deck with the same Type and Attribute that the sent monster had when it was on the field (its original type and Attribute, if face-down).'''

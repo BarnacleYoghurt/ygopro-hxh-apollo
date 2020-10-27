@@ -1,0 +1,17 @@
+[card.kite]
+id=20000300
+ot="custom"
+name="Hunter X Conjurator - Scythe Dancer"
+set="hunterx"
+type="monster link effect"
+race="warrior"
+attribute="dark"
+effect='''2+ "Hunter X" monsters
+Once per turn, you can roll a six-sided die. Look at cards from the top of your Deck equal to the roll, then you can reveal 1 "Hunter X" monster or 1 Spell/Trap that specifically lists "Hunter X" in its text, among them, and add it to your hand, also place the remaining cards on top of your Deck in any order. If this card is destroyed and sent to your GY: You can add 1 "Raging Contract" from your Deck to your hand.'''
+atk=2400
+link-rating=3
+link-arrows="top right bottom-left"
+strings=[
+	'''Roll to dig for "Hunter X" card''',
+	'''Add "Raging Contract" to hand'''
+]

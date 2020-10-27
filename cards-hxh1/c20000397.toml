@@ -1,0 +1,12 @@
+[card.ragingEmisor]
+id=20000395
+ot="custom"
+name="Hunter XX - Raging Emisor"
+set="hunterx"
+type="monster fusion effect"
+race="spellcaster"
+attribute="water"
+effect='''Must be Special Summoned with "Raging Contract". This card can attack while in face-up Defense Position to your opponent directly, but when it does so using this effect, the battle damage inflicted to your opponent is the original ATK of this card. Your opponent cannot target face-up "Hunter X" monsters on the field with card effects, except this one, also they cannot be destroyed by your opponent's card effects. The first time each "Hunter X" monster you control would be destroyed each turn, it is not destroyed.'''
+atk=1400
+def=3000
+level=7

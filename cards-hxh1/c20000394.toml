@@ -1,0 +1,15 @@
+[card.enragedEnhancer]
+id=20000394
+ot="custom"
+name="Hunter XX - Enraged Enhancer"
+set="hunterx"
+type="monster fusion effect"
+race="warrior"
+attribute="earth"
+effect='''Must be Special Summoned with "Raging Contract". If this card battles an opponent's monster, the ATK of this card becomes twice the ATK of the attack target, during damage calculation only. Once per turn, during the End Phase: Shuffle this card into the Extra Deck, and if you do, Special Summon 1 "Hunter X" monster from your Deck or GY, except "Hunter X Encancer - Gon".'''
+atk=-2
+def=0
+level=10
+strings=[
+	'''Shufle this card into the Extra Deck and Special Summon "Hunter X" monster'''
+]

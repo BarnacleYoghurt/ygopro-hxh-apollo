@@ -1,0 +1,24 @@
+[card.scarletEyesSpecialist]
+id=20000395
+ot="custom"
+name="Hunter XX - Scarlet Eyes Specialist"
+set="hunterx"
+type="monster fusion effect"
+race="spellcaster"
+attribute="light"
+effect='''Must be Special Summoned with "Raging Contract". Apply the following effect(s), based on the monster Attributes on the field.
+● LIGHT: Your opponent must keep their hand revealed.
+● DARK: At the start of the Damage Step, if this card battles: Destroy that opponent monster.
+● EARTH: This card cannot be destroyed by battle.
+● WATER: During your End Phase: Add 1 card from your GY to your hand.
+● FIRE: During your End Phase: inflict 1000 damage to your opponent.
+● WIND: Your opponent must pay 500 Life Points to activate a Spell Card.
+'''
+atk=2800
+def=0
+level=9
+strings=[
+	"Destroy opponent's monster",
+	"Add 1 card from GY to hand",
+	"Inflict 1000 damage"
+]
