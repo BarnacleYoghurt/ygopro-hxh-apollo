@@ -12,6 +12,7 @@ function s.initial_effect(c)
   e1:SetCountLimit(1,id)
   c:RegisterEffect(e1)
 end
+s.listed_series={0xf01}
 function s.condition1(e,tp,eg,ep,ev,re,r,rp)
 	return Duel.GetCurrentPhase()<PHASE_MAIN2
 end

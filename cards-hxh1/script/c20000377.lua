@@ -11,6 +11,7 @@ function s.initial_effect(c)
   e1:SetCountLimit(1,id)
   c:RegisterEffect(e1)
 end
+s.listed_series={0xf01}
 function s.filter1(c)
 	return c:IsSetCard(0xf01) and c:IsType(TYPE_MONSTER) and c:IsAbleToHand()
 end

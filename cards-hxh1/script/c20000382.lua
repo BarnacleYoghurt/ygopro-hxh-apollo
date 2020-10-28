@@ -31,6 +31,7 @@ function s.initial_effect(c)
 	e2:SetCountLimit(1,id)
 	c:RegisterEffect(e2)
 end
+s.listed_series={0xf01}
 function s.filter1(c)
 	return c:IsSetCard(0xf01) and c:IsAbleToHand()
 end

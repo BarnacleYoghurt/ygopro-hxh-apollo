@@ -13,6 +13,7 @@ function s.initial_effect(c)
   c:RegisterEffect(e1)
 end
 s.roll_dice=true
+s.listed_series={0xf01}
 function s.filter1(c)
   return c:IsSetCard(0xf01) and c:IsType(TYPE_MONSTER)
 end

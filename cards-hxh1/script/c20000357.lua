@@ -33,6 +33,7 @@ function s.initial_effect(c)
   e3:SetValue(aux.indoval)
   c:RegisterEffect(e3)
 end
+s.listed_series={0xf01}
 function s.condition1(e,tp,eg,ep,ev,re,r,rp)
   local a=Duel.GetAttacker()
   local d=Duel.GetAttackTarget()

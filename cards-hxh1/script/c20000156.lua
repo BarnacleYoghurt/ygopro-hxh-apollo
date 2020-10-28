@@ -33,6 +33,7 @@ function s.initial_effect(c)
 	e3:SetCountLimit(1,id)
 	c:RegisterEffect(e3)
 end
+s.listed_series={0xf01}
 function s.condition1(e,c)
 	if c==nil then return true end
 	return Duel.GetLocationCount(c:GetControler(),LOCATION_MZONE)>0 and Duel.GetFieldGroupCount(c:GetControler(),LOCATION_MZONE,0,nil)==0

@@ -28,6 +28,7 @@ function s.initial_effect(c)
   e2b:SetCode(EFFECT_UPDATE_DEFENSE)
   c:RegisterEffect(e2b)
 end
+s.listed_series={0xf01}
 function s.filter1(c,sp)
   return c:GetSummonPlayer()==sp
 end

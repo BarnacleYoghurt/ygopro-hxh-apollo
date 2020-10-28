@@ -26,6 +26,7 @@ function s.initial_effect(c)
 	c:RegisterEffect(e2)
 end
 s.roll_dice=true
+s.listed_series={0xf01}
 function s.filter1(c)
   local function IsSeriesListed(c,...)
     if not c.listed_series then return false end

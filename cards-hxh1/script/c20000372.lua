@@ -27,6 +27,7 @@ function s.initial_effect(c)
 	e2:SetCountLimit(1)
 	c:RegisterEffect(e2)
 end
+s.listed_series={0xf01}
 function s.filter1(c,tp)
   return c:IsControler(1-tp) and c:IsPreviousLocation(LOCATION_DECK)
 end

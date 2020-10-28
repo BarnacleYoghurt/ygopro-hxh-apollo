@@ -47,6 +47,7 @@ function s.initial_effect(c)
   e4:SetOperation(s.operation4)
   c:RegisterEffect(e4)
 end
+s.listed_series={0xf01}
 function s.filter1(c,tp)
   return c:IsReason(REASON_BATTLE+REASON_EFFECT) and c:IsPreviousPosition(POS_FACEUP) and c:IsPreviousSetCard(0xf01) and c:IsPreviousLocation(LOCATION_MZONE) and c:GetPreviousControler()==tp
     and not c:IsCode(id) and not (c:IsReason(REASON_EFFECT) and Duel.GetCurrentPhase()==PHASE_DAMAGE)
