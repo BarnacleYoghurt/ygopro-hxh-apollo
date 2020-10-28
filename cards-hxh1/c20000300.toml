@@ -13,5 +13,6 @@ link-rating=3
 link-arrows="top right bottom-left"
 strings=[
 	'''Roll to dig for "Hunter X" card''',
+	"Add a card to hand?",
 	'''Add "Raging Contract" to hand'''
 ]
