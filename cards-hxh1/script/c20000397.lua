@@ -60,6 +60,7 @@ function s.initial_effect(c)
 	c:RegisterEffect(e6)
 end
 s.listed_series={0xf01}
+s.listed_names={20000367}
 function s.condition2(e)
   return Duel.GetAttacker()==e:GetHandler() and e:GetHandler():IsDefensePos()
 end

@@ -31,7 +31,7 @@ function s.initial_effect(c)
 	c:RegisterEffect(e2)
 end
 s.listed_series={0xf01}
-s.listed_names={20000354}
+s.listed_names={20000354,20000367}
 function s.condition1(e)
   local bc=e:GetHandler():GetBattleTarget()
   return Duel.GetCurrentPhase()==PHASE_DAMAGE_CAL and bc and bc:IsControler(1-e:GetHandlerPlayer())

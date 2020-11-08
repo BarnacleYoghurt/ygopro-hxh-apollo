@@ -71,6 +71,7 @@ function s.initial_effect(c)
 	e6:SetOperation(s.operation6)
 	c:RegisterEffect(e6)
 end
+s.listed_names={20000367}
 function s.filter(c,attr)
   return c:IsFaceup() and c:IsAttribute(attr)
 end
