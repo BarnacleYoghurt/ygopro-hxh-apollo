@@ -4,17 +4,17 @@ function s.initial_effect(c)
   --Special Summon
   local e1=Effect.CreateEffect(c)
 	e1:SetType(EFFECT_TYPE_FIELD)
-	e1:SetCode(EFFECT_SPSUMMON_PROC)
 	e1:SetProperty(EFFECT_FLAG_UNCOPYABLE)
 	e1:SetRange(LOCATION_HAND)
+	e1:SetCode(EFFECT_SPSUMMON_PROC)
 	e1:SetCondition(s.condition1)
 	c:RegisterEffect(e1)
   --Search
   local e2=Effect.CreateEffect(c)
 	e2:SetCategory(CATEGORY_TOHAND+CATEGORY_SEARCH)
   e2:SetDescription(aux.Stringid(id,0))
-	e2:SetRange(LOCATION_MZONE)
 	e2:SetType(EFFECT_TYPE_IGNITION)
+	e2:SetRange(LOCATION_MZONE)
 	e2:SetCost(s.cost2)
 	e2:SetTarget(s.target2)
 	e2:SetOperation(s.operation2)
@@ -22,10 +22,10 @@ function s.initial_effect(c)
 	c:RegisterEffect(e2)
   --Special Summon from GY
   local e3=Effect.CreateEffect(c)
-  e3:SetDescription(aux.Stringid(id,1))
 	e3:SetCategory(CATEGORY_SPECIAL_SUMMON)
-	e3:SetProperty(EFFECT_FLAG_CARD_TARGET)
+  e3:SetDescription(aux.Stringid(id,1))
 	e3:SetType(EFFECT_TYPE_IGNITION)
+	e3:SetProperty(EFFECT_FLAG_CARD_TARGET)
 	e3:SetRange(LOCATION_GRAVE)
 	e3:SetCost(aux.bfgcost)
 	e3:SetTarget(s.target3)
@@ -39,7 +39,7 @@ function s.condition1(e,c)
 	return Duel.GetLocationCount(c:GetControler(),LOCATION_MZONE)>0 and Duel.GetFieldGroupCount(c:GetControler(),LOCATION_MZONE,0,nil)==0
 end
 function s.filter2(c)
-	return c:IsSetCard(0xf01) and c:IsAbleToHand()
+	return c:IsSetCard(0xf01) and c:IsType(TYPE_MONSTER) and c:IsAbleToHand()
 end
 function s.cost2(e,tp,eg,ep,ev,re,r,rp,chk)
 	if chk==0 then return e:GetHandler():IsReleasable() end
@@ -61,7 +61,7 @@ function s.filter3(c,e,tp)
 	return c:IsSetCard(0xf01) and c:IsCanBeSpecialSummoned(e,0,tp,false,false)
 end
 function s.target3(e,tp,eg,ep,ev,re,r,rp,chk,chkc)
-	if chkc then return chkc:IsCanBeEffectTarget(e) and chkc:IsControler(tp) and chkc:IsLocation(LOCATION_GRAVE) and s.filter3(chkc,e,tp) end
+	if chkc then return chkc:IsControler(tp) and chkc:IsLocation(LOCATION_GRAVE) and s.filter3(chkc,e,tp) end
 	if chk==0 then return Duel.GetLocationCount(tp,LOCATION_MZONE)>0 and Duel.IsExistingTarget(s.filter3,tp,LOCATION_GRAVE,0,1,e:GetHandler(),e,tp) end
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_SPSUMMON)
 	local tg=Duel.SelectTarget(tp,s.filter3,tp,LOCATION_GRAVE,0,1,1,e:GetHandler(),e,tp)
