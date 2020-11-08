@@ -7,8 +7,8 @@ function s.initial_effect(c)
   local e1=Effect.CreateEffect(c)
 	e1:SetCategory(CATEGORY_DICE+CATEGORY_TOHAND)
 	e1:SetDescription(aux.Stringid(id,0))
-	e1:SetRange(LOCATION_MZONE)
 	e1:SetType(EFFECT_TYPE_IGNITION)
+	e1:SetRange(LOCATION_MZONE)
 	e1:SetTarget(s.target1)
 	e1:SetOperation(s.operation1)
 	e1:SetCountLimit(1)
@@ -17,8 +17,8 @@ function s.initial_effect(c)
   local e2=Effect.CreateEffect(c)
 	e2:SetCategory(CATEGORY_TOHAND)
 	e2:SetDescription(aux.Stringid(id,2))
-	e2:SetProperty(EFFECT_FLAG_DAMAGE_STEP+EFFECT_FLAG_DELAY)
 	e2:SetType(EFFECT_TYPE_SINGLE+EFFECT_TYPE_TRIGGER_O)
+	e2:SetProperty(EFFECT_FLAG_DAMAGE_STEP+EFFECT_FLAG_DELAY)
 	e2:SetCode(EVENT_TO_GRAVE)
 	e2:SetCondition(s.condition2)
 	e2:SetTarget(s.target2)
@@ -27,6 +27,7 @@ function s.initial_effect(c)
 end
 s.roll_dice=true
 s.listed_series={0xf01}
+s.listed_names={20000367}
 function s.filter1(c)
   local function IsSeriesListed(c,...)
     if not c.listed_series then return false end
@@ -64,7 +65,6 @@ function s.operation1(e,tp,eg,ep,ev,re,r,rp)
     Duel.SortDecktop(tp,tp,dc) 
   end
 end
-
 function s.filter2(c)
 	return c:IsCode(20000367) and c:IsAbleToHand()
 end
