@@ -30,6 +30,6 @@ function s.operation1(e,tp,eg,ep,ev,re,r,rp)
   if dc>gc then
     Duel.Draw(tp,dc-gc,REASON_EFFECT)
   elseif gc>dc then
-    Duel.DiscardHand(tp,aux.TRUE,gc-dc,gc-dc,REASON_EFFECT,nil)
+    Duel.DiscardHand(tp,aux.TRUE,gc-dc,gc-dc,REASON_EFFECT+REASON_DISCARD,nil)
   end
 end
