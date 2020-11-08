@@ -16,3 +16,4 @@ strings=[
 	"Add a card to hand?",
 	'''Add "Raging Contract" to hand'''
 ]
+category="gamble to_hand search"

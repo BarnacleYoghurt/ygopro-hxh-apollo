@@ -8,3 +8,4 @@ strings=[
   '''Add "Hunter X" monster from Deck''',
   "Destroy Spell/Trap"
 ]
+category="search to_hand destroy_st"

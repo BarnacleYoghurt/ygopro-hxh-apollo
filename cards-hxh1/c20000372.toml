@@ -15,3 +15,4 @@ strings=[
 	"Banish monster and draw",
 	'''Return the "Hunter X" monster banished by "Hunter X Conjurator - Knov"'''
 ]
+category="sp_summon banish draw"

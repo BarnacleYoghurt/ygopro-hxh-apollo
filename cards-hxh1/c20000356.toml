@@ -14,3 +14,4 @@ strings=[
 	"Special Summon this card",
 	"Reduce ATK"
 ]
+category="sp_summon change_atkdef"

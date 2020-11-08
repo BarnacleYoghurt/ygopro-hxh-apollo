@@ -14,3 +14,4 @@ strings=[
 	"Special Summon this card",
 	"Special Summon Token"
 ]
+category="sp_summon token destroy_monster"

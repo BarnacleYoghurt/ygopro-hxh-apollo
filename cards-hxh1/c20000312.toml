@@ -14,3 +14,4 @@ strings=[
 	"Special Summon this card",
 	"Equip destroyed monster"
 ]
+category="sp_summon negate_effect"

@@ -14,3 +14,4 @@ strings=[
 	"Special Summon this card",
 	"Place Hakoware Counter"
 ]
+category="sp_summon counter negate_effect"

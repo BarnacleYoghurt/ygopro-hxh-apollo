@@ -13,3 +13,4 @@ strings=[
 	"Destroy opponent's monster",
 	"All of the above"
 ]
+category="piercing destroy_monster"

@@ -14,3 +14,4 @@ strings=[
 	"Special Summon this card",
 	"Change battle positions of opponent's monsters"
 ]
+category="sp_summon position"

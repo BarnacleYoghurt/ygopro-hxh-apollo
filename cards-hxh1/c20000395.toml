@@ -22,3 +22,4 @@ strings=[
 	"Add 1 card from GY to hand",
 	"Inflict 1000 damage"
 ]
+category="destroy_monster to_hand damage"

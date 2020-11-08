@@ -10,3 +10,4 @@ effect='''Must be Special Summoned with "Raging Contract". This card can attack 
 atk=1400
 def=3000
 level=7
+category="direct_attack"

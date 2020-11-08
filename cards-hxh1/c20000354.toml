@@ -13,3 +13,4 @@ level=3
 strings=[
 	"Special Summon this card"
 ]
+category="sp_summon change_atkdef"

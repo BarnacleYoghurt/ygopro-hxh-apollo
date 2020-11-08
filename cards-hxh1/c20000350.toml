@@ -10,3 +10,4 @@ effect='''Must be Special Summoned with "Raging Contract". Your opponent's card 
 atk=3000
 def=2500
 level=8
+category="repeat_attack destroy_hand"

@@ -13,3 +13,4 @@ level=10
 strings=[
 	'''Shufle this card into the Extra Deck and Special Summon "Hunter X" monster'''
 ]
+category="change_atkdef to_deck sp_summon"

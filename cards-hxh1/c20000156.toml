@@ -14,3 +14,4 @@ strings=[
 	'''Tribute this card to add "Hunter X" monster''',
 	'''Banish this card to Special Summon "Hunter X" monster from GY'''
 ]
+category="sp_summon search to_hand banish negate_effect change_atkdef"

@@ -13,3 +13,4 @@ level=4
 strings=[
 	"Special Summon this card"
 ]
+category="sp_summon"
