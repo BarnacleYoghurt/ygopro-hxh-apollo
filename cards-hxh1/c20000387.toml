@@ -4,3 +4,4 @@ ot="custom"
 name="Crazy Slots"
 type="trap"
 effect='''If you have a "Hunter X" monster in your GY: Roll a six-sided die; draw or discard cards until your hand has cards equal to the result. You can only activate 1 "Crazy Slots" per turn'''
+category="gamble draw destroy_hand"

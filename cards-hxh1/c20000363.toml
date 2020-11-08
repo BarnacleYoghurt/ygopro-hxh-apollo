@@ -7,3 +7,4 @@ effect='''When an opponent's monster declares an attack while you control a "Hun
 strings=[
   "Destroy opponent's monster with highest ATK"
 ]
+category="destroy_monster"
