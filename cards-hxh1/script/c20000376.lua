@@ -2,10 +2,10 @@
 local s,id=GetID()
 function s.initial_effect(c)
   --Activate
-  local e1 = Effect.CreateEffect(c)
+  local e1=Effect.CreateEffect(c)
 	e1:SetCategory(CATEGORY_NEGATE+CATEGORY_DESTROY)
-	e1:SetProperty(EFFECT_FLAG_DAMAGE_STEP+EFFECT_FLAG_DAMAGE_CAL)
   e1:SetType(EFFECT_TYPE_ACTIVATE)
+	e1:SetProperty(EFFECT_FLAG_DAMAGE_STEP+EFFECT_FLAG_DAMAGE_CAL)
   e1:SetCode(EVENT_CHAINING)
   e1:SetCondition(s.condition1)
   e1:SetTarget(s.target1)
@@ -27,6 +27,7 @@ function s.condition1(e,tp,eg,ep,ev,re,r,rp)
 end
 function s.target1(e,tp,eg,ep,ev,re,r,rp,chk)
 	if chk==0 then return true end
+	Duel.SetOperationInfo(0,CATEGORY_NEGATE,eg,1,0,0)
 	if re:GetHandler():IsRelateToEffect(re) and re:GetHandler():IsDestructable() then
 		Duel.SetOperationInfo(0,CATEGORY_DESTROY,re:GetHandler(),1,0,0)
 	end
