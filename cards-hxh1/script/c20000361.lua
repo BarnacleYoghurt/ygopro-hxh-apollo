@@ -3,8 +3,8 @@ local s,id=GetID()
 function s.initial_effect(c)
   --Activate
   local e1 = Effect.CreateEffect(c)
-  e1:SetProperty(EFFECT_FLAG_CARD_TARGET)
   e1:SetType(EFFECT_TYPE_ACTIVATE)
+  e1:SetProperty(EFFECT_FLAG_CARD_TARGET)
   e1:SetCode(EVENT_FREE_CHAIN)
   e1:SetCondition(s.condition1)
   e1:SetTarget(s.target1)
@@ -13,17 +13,18 @@ function s.initial_effect(c)
   c:RegisterEffect(e1)
 end
 s.listed_series={0xf01}
-function s.condition1(e,tp,eg,ep,ev,re,r,rp)
-	return Duel.GetCurrentPhase()<PHASE_MAIN2
-end
+s.listed_names={20000354}
 function s.filter1a(c)
   return c:IsFaceup() and c:IsSetCard(0xf01)
 end
 function s.filter1b(c)
   return c:IsFaceup() and c:IsCode(20000354)
 end
+function s.condition1(e,tp,eg,ep,ev,re,r,rp)
+	return Duel.GetCurrentPhase()<PHASE_MAIN2
+end
 function s.target1(e,tp,eg,ep,ev,re,r,rp,chk,chkc)
-  if chkc then return chkc:IsCanBeEffectTarget(e) and chkc:IsLocation(LOCATION_MZONE) and chkc:IsControler(tp) and s.filter1a(chkc) end
+  if chkc then return chkc:IsLocation(LOCATION_MZONE) and chkc:IsControler(tp) and s.filter1a(chkc) end
   if chk==0 then return Duel.IsExistingTarget(s.filter1a,tp,LOCATION_MZONE,0,1,nil) end
   Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_TARGET)
   local g=Duel.SelectTarget(tp,s.filter1a,tp,LOCATION_MZONE,0,1,1,nil)
@@ -33,8 +34,8 @@ function s.operation1(e,tp,eg,ep,ev,re,r,rp)
   local tc=Duel.GetFirstTarget()
   if tc:IsRelateToEffect(e) then
     local e1=Effect.CreateEffect(e:GetHandler())
-    e1:SetRange(LOCATION_MZONE)
     e1:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
+    e1:SetRange(LOCATION_MZONE)
     e1:SetCode(EVENT_PRE_DAMAGE_CALCULATE)
     e1:SetCondition(s.condition1_1)
     e1:SetOperation(s.operation1_1)
