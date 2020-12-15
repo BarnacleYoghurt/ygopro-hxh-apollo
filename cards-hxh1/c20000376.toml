@@ -1,6 +1,6 @@
 [card.scream]
 id=20000376
-ot="custom"
+ot="ocg tcg"
 name="Scream"
 type="trap counter"
 effect='''When a Spell/Trap Card is activated while you control a "Hunter X" card: Negate the activation, and if you do, destroy that card. If you control 1 level 7 or higher "Hunter X" monster, you can activate this card from your hand.'''
