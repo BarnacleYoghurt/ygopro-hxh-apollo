@@ -35,7 +35,7 @@ function s.target1(e,tp,eg,ep,ev,re,r,rp,chk,chkc)
   if chkc then return pg:IsContains(chkc) end
   if chk==0 then return pg:GetCount()>0 and Duel.GetLocationCount(tp,LOCATION_MZONE)>0 end
   Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_TARGET)
-  local tg=pg:Select(pg,tp,1,1,nil)
+  local tg=pg:Select(tp,1,1,nil)
   Duel.SetTargetCard(tg)
 	Duel.SetOperationInfo(0,CATEGORY_SPECIAL_SUMMON,nil,1,tp,LOCATION_DECK)
 end
